@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.6.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css"
+	href="http://www.jeasyui.com/easyui/themes/icon.css">
+<link rel="stylesheet" type="text/css"
+	href="http://www.jeasyui.com/easyui/demo/demo.css">
+<script type="text/javascript"
+	src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+
+<style type="text/css">
+#formDiv {
+	margin: 0 auto;
+	width: 350px;
+}
+
+#headDiv {
+	text-align: right;
+	background-color: #E5EFFF;
+}
+
+#tittleDiv {
+	text-align: center;
+}
+
+h1 {
+	font-size: 36px;
+}
+</style>
+
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+	<div id="mainDiv">
+		<div id="headDiv" style="height: 50px;"></div>
+		<div id="tittleDiv">
+			<h1>My Test</h1>
+		</div>
+		<div id="formDiv">
+			<div class="easyui-panel" title="登録インフォ" style="width: 350px">
+				<div style="padding: 10px 0 10px 60px">
+					<form id="ff"
+						action="www.weather.com.cn/data/sk/10101010
+						.html" method="get">
+						<table>
+							<tr>
+								<td>ユーザ名:</td>
+								<td><input class="easyui-validatebox" type="text"
+									name="usid"></input></td>
+							</tr>
+							<tr>
+								<td>パスワード:</td>
+								<td><input class="easyui-validatebox" type="password"
+									name="psd"></input></td>
+							</tr>
+							<tr>
+								<td>一覧表示件数:</td>
+								<td><select class="easyui-combobox" name="numOfPrePage"
+									style="width: 100px" editable="false">
+										<option value="10">10</option>
+										<option value="50">50</option>
+										<option value="100">100</option>
+								</select>&nbsp;件</td>
+							</tr>
+						</table>
+
+					</form>
+				</div>
+				<div style="text-align: center; padding: 5px">
+					<a href="javascript:void(0)" class="easyui-linkbutton"
+						style="width: 100px" onclick="submitForm()">登録</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
